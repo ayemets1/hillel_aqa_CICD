@@ -26,4 +26,4 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Test
-      run: dotnet test --verbosity normal AtataUITests\bin\Debug\net8.0\AtataUITests.dll
+      run: dotnet test --verbosity normal AtataUITests\AtataUITests.csproj
