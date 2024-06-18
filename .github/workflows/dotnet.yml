@@ -16,15 +16,27 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+
+    - name: List directory contents
+      run: dir
+      shell: cmd
+
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 8.0.x
+
+    - name: List hillel_aqa_CICD directory contents
+      run: dir hillel_aqa_CICD
+      shell: cmd
+
     - name: Restore dependencies
       run: dotnet restore
       working-directory: hillel_aqa_CICD
+
     - name: Build
       run: dotnet build
       working-directory: hillel_aqa_CICD
+
     - name: Test
-      run: dotnet test --verbosity normal hillel_aqa_CICD\AtataUITests\bin\Debug\net8.0\AtataUITests.dll
+      run: dotnet test --verbosity normal hillel_aqa_CICD\AtataUITests\AtataUITests.csproj
