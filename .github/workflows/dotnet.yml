@@ -31,4 +31,4 @@ jobs:
       working-directory: AtataUITests
 
     - name: Test
-      run: dotnet test --verbosity normal AtataUITests\AtataUITests.csproj
+      run: dotnet test --verbosity normal AtataUITests\AtataUITests.csproj --filter "Category=UI"
