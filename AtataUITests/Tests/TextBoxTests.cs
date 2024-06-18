@@ -32,6 +32,7 @@ namespace AtataUITests.Tests
         }
 
         //TC3: Enter "John Doe" in Full Name input, press Submit, text should be "Name:John Doe" in afterSubmit area
+        [Category("Smoke")]
         [Test]
         public void VerifyFullNameCanBeSubmitted()
         {
