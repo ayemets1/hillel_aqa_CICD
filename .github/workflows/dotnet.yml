@@ -22,7 +22,8 @@ jobs:
         dotnet-version: 8.0.x
     - name: Restore dependencies
       run: dotnet restore
+  
     - name: Build
       run: dotnet build --no-restore
     - name: Test
-      run: dotnet test --verbosity normal hillel_aqa_CICD\AtataUITests\bin\Debug\net8.0\AtataUITests.dll --filter "Category=UI"
+      run: dotnet test --verbosity normal AtataUITests\bin\Debug\net8.0\AtataUITests.dll
