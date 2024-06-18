@@ -22,7 +22,9 @@ jobs:
         dotnet-version: 8.0.x
     - name: Restore dependencies
       run: dotnet restore
+      working-directory: HillellForCICD
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build
+      working-directory: HillellForCICD
     - name: Test
       run: dotnet test --verbosity normal D:\hillel\HillellForCICD\AtataUITests\bin\Debug\net8.0\AtataUITests.dll
