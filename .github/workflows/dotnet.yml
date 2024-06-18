@@ -24,11 +24,11 @@ jobs:
 
     - name: Restore dependencies
       run: dotnet restore
-      working-directory: hillel_aqa_CICD
+      working-directory: AtataUITests
 
     - name: Build
       run: dotnet build
-      working-directory: hillel_aqa_CICD
+      working-directory: AtataUITests
 
     - name: Test
-      run: dotnet test --verbosity normal hillel_aqa_CICD/hillel_aqa_CICD/AtataUITests/AtataUITests.csproj
+      run: dotnet test --verbosity normal AtataUITests\AtataUITests.csproj
