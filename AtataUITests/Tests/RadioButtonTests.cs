@@ -6,6 +6,7 @@ namespace AtataUITests.Tests
     internal class RadioButtonTests : UITestFixture
     {        
         [Test]
+        [Category("Smoke")]
         [Description("Verify Yes radio Button can be checked and result text is 'You have selected Yes'")]
         public void VerifyYesRadioButton()
         {
@@ -32,6 +33,7 @@ namespace AtataUITests.Tests
         }
 
         [Test]
+        [Category("Smoke")]
         [Description("Verify H1 Radio Button is visible")]
         public void VerifyPageHeader()
         {
