@@ -15,7 +15,7 @@ namespace AtataUITests.Tests
         [Category("Smoke")]
         public void DownloadToContextTest()
         {
-            Go.To<DemoQADownloadUploadPage>().
+            Go.To<DemoQADownloadUploadPage>().ScrollDown().
                 Download.Click();
 
             AtataContext.Current.Artifacts.Should.WithinSeconds(10).ContainFile("sampleFile.jpeg");
@@ -38,7 +38,7 @@ namespace AtataUITests.Tests
         [Category("Smoke")]
         public void UploadFromParticularFolder()
         {           
-            Go.To<DemoQADownloadUploadPage>().
+            Go.To<DemoQADownloadUploadPage>().ScrollDown().
                 Upload.Set(HelperMethods.GetProjectFilePath() + "Downloads/sampleFile.jpeg").
             UploadedFileText.Should.BeVisible();
         }
