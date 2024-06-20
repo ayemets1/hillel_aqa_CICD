@@ -5,7 +5,7 @@ name: .NET
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "*" ]
   pull_request:
     branches: [ "main" ]
 
@@ -31,4 +31,4 @@ jobs:
       working-directory: AtataUITests
 
     - name: Test
-      run: dotnet test --verbosity normal AtataUITests\AtataUITests.csproj --filter "Category=UI"
+      run: dotnet test --verbosity normal AtataUITests\AtataUITests.csproj --filter "Category=Smoke"
