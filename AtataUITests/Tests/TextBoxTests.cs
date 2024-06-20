@@ -15,8 +15,7 @@ namespace AtataUITests.Tests
     {
         #region "Full Name" input field
 
-        //TC1: Label "Full Name" should be visible
-        [Category ("UI")]
+        //TC1: Label "Full Name" should be visible       
         [Test]
         public void VerifyFullNameFieldLabelVisible()
         {
@@ -24,8 +23,7 @@ namespace AtataUITests.Tests
         }
 
         //TC2: Full Name input should be visible
-        [Test]
-        [Category("UI")]
+        [Test]        
         public void VerifyFullNameInputFieldVisible()
         {
             demoQaTextBoxPage.FullNameInput.Should.BeVisible();
@@ -47,6 +45,7 @@ namespace AtataUITests.Tests
         //Note: TC4 covers TC7 idea.
 
         [Test]
+        [Category("Smoke")]
         public void VerifyFullNameFieldCanBeCleared()
         {
             demoQaTextBoxPage

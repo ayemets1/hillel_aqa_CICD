@@ -68,6 +68,7 @@ namespace AtataUITests.Tests
         }
 
         [Test, Description("TC8 - Check Home, Expand Home, verify Desktop, Documents, Downloads checkboxex checked")]
+        [Category("Smoke")]
         public void VerifyChildCheckboxesCheckedIfHomeChecked()
         {
             demoQaCheckBoxPage.ScrollDown().
