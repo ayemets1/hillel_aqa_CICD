@@ -14,6 +14,7 @@ namespace PlaywrigthUITests.Tests
         }
 
         [Test]
+        [Category("SmokePW")]
         [Description("Verify 'Yes'' radio Button can be checked and result text is 'You have selected Yes'")]
         public async Task CheckYesRadioButton()
         {
@@ -53,6 +54,7 @@ namespace PlaywrigthUITests.Tests
         }
 
         [Test]
+        [Category("SmokePW")]
         [Description("Verify H1 Radio Button is visible")]
         public async Task VerifyRadioButtonPageHeader()
         {

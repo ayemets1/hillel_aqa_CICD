@@ -19,6 +19,7 @@ namespace PlaywrigthUITests.Tests
         }
 
         [Test]
+        [Category("SmokePW")]
         public async Task VerifyHomeCheckBoxCanBeChecked()
         {            
             await _demoQACheckBoxPage.CheckHomeCheckbox();

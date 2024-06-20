@@ -33,6 +33,7 @@ namespace PlaywrigthUITests.Tests
         }
 
         [Test]
+        [Category("SmokePW")]
         [Description("Enter 'John Doe' in Text Full Name Input, press submit, text Name should be 'Name:John Doe'")]
         public async Task VerifyTextSetFullName()
         {

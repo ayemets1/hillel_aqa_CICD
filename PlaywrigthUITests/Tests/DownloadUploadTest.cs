@@ -14,6 +14,7 @@ namespace PlaywrigthUITests.Tests
         }
 
         [Test, Description("Download file, verify file exists")]
+        [Category("SmokePW")]
         public async Task VerifyDownload()
         {           
             await _demoQADownloadPage.VerifyFileDownloaded();
