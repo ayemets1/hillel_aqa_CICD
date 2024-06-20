@@ -22,9 +22,12 @@ jobs:
         dotnet-version: 8.0.x
     - name: Restore dependencies
       run: dotnet restore
+      working-directory: PlaywrigthUITests
     - name: Build
       run: dotnet build --no-restore
+      working-directory: PlaywrigthUITests
     - name: PWInstall
+      working-directory: PlaywrigthUITests
       run: pwsh bin/Debug/net8.0/playwright.ps1 install --with-deps
     - name: Test
       run: dotnet test PlaywrigthUITests\PlaywrigthUITests.csproj
